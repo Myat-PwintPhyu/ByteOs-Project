@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ByteOs|Product</title>
+  <link rel="stylesheet" href="../css/product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+
+<body>
+  <div class="nav">
+
+    <div class="">
+      
+      <a href="../html/product.html"> <i class="fa-solid fa-home"></i></a>
+      <i class="fa-solid fa-cart-shopping" id="cartIcon"></i>
+      <span class="quantity">0</span>
+    </div>
+    <div class="logo">
+      <h2 class="sidName">ByteOs</h2>
+    </div>
+    <div class="menu">
+      <div class="searchbar">
+        <i class="fa-solid fa-magnifying-glass navIcon"></i>
+        <input type="text" class="navInput" id="searchBar" placeholder="Search">
+      </div>
+      <i class="fa-solid fa-user" id="profilbtn"></i>
+      
+    </div>
+    <i class="fa-solid fa-bars " id="navToggle" ></i>
+  </div>
+
+  <!-- Slide Menu -->
+  <div class="menu-offcanvas ">
+    <div class="menu-header">
+      <h3>Menu</h3>
+      <i class="fa-solid fa-xmark" style="font-size: 25px" id="menu-offcanvas-close"></i>
+    </div>
+    <hr style="margin-bottom: 10px;" />
+    
+    <div class="searchbar" style="margin-bottom: 10px;">
+      <i class="fa-solid fa-magnifying-glass " id="silideNavIcon"></i>
+      <input type="text" id="slideSearchBar" placeholder="Search">
+    </div>
+   
+
+    <h3>
+      <i class="fa-solid fa-user" id="slideProfilbtn"></i>
+    </h3>
+    <br>
+    <h3 style="font-weight: bold; text-decoration: none;">
+      Profile
+    </h3>
+    <h5>
+      <a href="../html/editProfile.html" style="text-decoration: none;">Edit Profile</a>
+    </h5>
+    <h5>
+      <a href="../html/profilesetUp.html" style="text-decoration: none;" id="slideLogout">Logout</a>
+    </h5><br>
+
+    <h3 style="font-weight: bold; text-decoration: none;">
+      Shop
+    </h3>
+    <h5>
+      <a href="../html/product.html" style="text-decoration: none;">All</a>
+    </h5>
+    <h5>
+      <a href="#" class="MC" style="text-decoration: none;">Men's Clothing</a>
+    </h5>
+    <h5>
+      <a href="#" class="WC" style="text-decoration: none;">Women's Clothing</a>
+    </h5>
+    <h5>
+      <a href="#" class="JE" style="text-decoration: none;">Accessories</a>
+    </h5>
+    <h5>
+      <a href="#" class="EC" style="text-decoration: none;">Electronics</a>
+    </h5><br>
+
+    <h3 style="font-weight: bold; text-decoration: none;">
+      History
+    </h3>
+    <h5>
+      <a href="#" id="purchaseHistoryLink" style="text-decoration: none;">Purchase History</a>
+    </h5><br>
+
+    <h3 style="font-weight: bold; text-decoration: none;">
+      Follow Us
+    </h3>
+    <h5>
+      <a href="#" style="text-decoration: none;">Facebook</a>
+    </h5>
+    <h5>
+      <a href="#" style="text-decoration: none;">Instagram</a>
+    </h5>
+    <h5>
+      <a href="#" style="text-decoration: none;">Twitter</a>
+    </h5>
+    <h5>
+      <a href="#" style="text-decoration: none;">Pinterest</a>
+    </h5>
+
+  </div>
+
+  <div class="bodyContainer">
+    <div class="sidebar">
+      <h2>Profile</h2>
+      <ul>
+        <li><a href="../html/editProfile.html">Edit Profile</a></li>
+        <li><a href="#" class="logout">Logout</a></li>
+      </ul>
+
+      <h2>Shop</h2>
+      <ul>
+        <li><a href="../html/product.html">All</a></li>
+        <li><a href="#" class="MC2">Men's Clothing</a></li>
+        <li><a href="#" class="WC2">Women's Clothing</a></li>
+        <li><a href="#" class="JE2">Accessories</a></li>
+        <li><a href="#" class="EC2">Electronics</a></li>
+      </ul>
+
+      <h2>History</h2>
+      <ul>
+
+        <li><a href="#" id="purchaseHistoryLink2">Purchase History</a></li>
+
+      </ul>
+
+      <h2>Follow Us</h2>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Pinterest</a></li>
+      </ul>
+    </div>
+    <div id="productCon"></div>
+    <div></div>
+  </div>
+  <div id="loading">Loading...</div>
+  <div class="profilSetUp">
+    <div class="name"></div>
+    <div class="email"></div>
+  </div>
+  <div id="purchaseHistoryModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 style="margin-bottom: 10px;">Purchase History</h3>
+      <div style="border: 1px solid rgb(63, 80, 110); margin-bottom: 20px;"></div>
+      <div id="purchaseHistoryContent">
+
+      </div>
+    </div>
+  </div>
+  <script src="../js/product.js"></script>
+</body>
+
+</html>

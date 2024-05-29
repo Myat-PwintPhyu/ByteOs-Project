@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #abc1f9;
+  
+}
+
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #5068a9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #324e7b ;
+  border-radius: 3px;
+  color: #324e7b;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #66afe9;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #425f90;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color:#5068a9;
+  transform: scale(1.05);
+}
+
+@keyframes buttonHover {
+  0% {
+    background-color: #5068a9;
+    transform: scale(1);
+  }
+  50% {
+    background-color: #7a8cc3;
+    transform: scale(1.1);
+  }
+  100% {
+    background-color: #526e8d;
+    transform: scale(1.05);
+  }
+}
+
+
+.sixty-percent-bg {
+  background-color: #f8f8f8;
+}
+
+.thirty-percent-bg {
+  background-color: #5068a9;
+}
+
+.ten-percent-bg {
+  background-color: #86a6df;
+}
+
+.border-color {
+  border-color: #324e7b; 
+}
